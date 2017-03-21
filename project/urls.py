@@ -6,10 +6,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'project.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
     url(r'^(\d+)\+(\d+)$', views.suma, name="suma"),
     url(r'^(\d+)\-(\d+)$', views.resta, name="resta"),
     url(r'^(\d+)\*(\d+)$', views.multiplicacion, name="multiplicacion"),
     url(r'^(\d+)/(\d+)$', views.division, name="division"),
-	#url(r'.*'', views.error, name="error"),
 )
